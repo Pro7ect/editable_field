@@ -1,0 +1,15 @@
+.edit-in-place span {
+    cursor: pointer;
+}
+
+.edit-in-place input, .edit-in-place select {
+    display: none;
+}
+
+.edit-in-place.active span {
+    display: none;
+}
+
+.edit-in-place.active.active-input input, .edit-in-place.active.active-select select {
+    display: inline-block;
+}

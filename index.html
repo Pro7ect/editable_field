@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script src="scripts/app.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/css.css">
+  </head>
+  <body>
+  <div class="row" ng-controller="editInPlaceCtrl">
+      <div class="col-lg-12 text-center">
+          <h2>Edit in place</h2>
+          <div class="row">
+              <div class="col-lg-6">
+                  <edit-in-place type="select" options="data.selectValue" value="data.selectedOption"></edit-in-place>
+              </div>
+              <div class="col-lg-6">
+                  <edit-in-place type="input" value="data.inputValue"></edit-in-place>
+              </div>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>
